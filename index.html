@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Nuestro Halloween Mágico</title><link rel="stylesheet" href="css/styles.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script></head><body>
+<canvas id="c"></canvas><div id="flash"></div><div id="bubble"><i>🥰</i><p></p></div>
+<header><h1>🎃 Nuestro Halloween Mágico</h1><p>Contigo, hasta la noche más oscura brilla bonito.</p></header>
+<div id="stats" class="panel"></div><div id="msg" class="panel"></div>
+<div id="foods" class="panel tray" hidden></div>
+<div id="joy"><i></i></div>
+<div id="pad"><button data-b="a" id="ba">💗<span>Ver</span></button><button data-b="b">⤴️<span>Saltar</span></button><button data-b="sit">🪑<span>Sentar</span></button><button data-b="sleep">💤<span>Dormir</span></button><button data-b="dance">💃<span>Bailar</span></button></div>
+<nav id="nav" class="panel row">
+<button data-n="home">🏡<span>Inicio</span></button><button data-n="food">🍪<span>Comida</span></button>
+<button data-n="media">📸<span>Recuerdos</span></button><button data-n="letter">💌<span>Carta</span></button>
+<button data-n="ghost">👻<span>Fantasma</span></button><button data-n="sound">🔇<span>Sonido</span></button></nav>
+<section id="media" class="ov" hidden><div class="paper dark"><div class="tabs"><button data-t="fotos">📷 Fotos</button><button data-t="videos">🎬 Videos</button><button data-t="musica">🎵 Música</button></div>
+<div id="grid"></div><div class="row2"><button id="stop">⏹ Parar música</button><button id="mclose">Cerrar</button></div></div></section>
+<section id="lb" class="ov" hidden></section>
+<section id="letter" class="ov" hidden><div class="paper"><div class="hearts">♥ 🎃 ♥</div>
+<label>Para: <input id="to" maxlength="30"></label><div id="txt" contenteditable="true"></div>
+<div class="row2"><button id="save">Guardar</button><button id="close">Cerrar</button></div></div></section>
+<script type="module" src="js/main.js"></script></body></html>
